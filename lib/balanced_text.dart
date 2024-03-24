@@ -123,7 +123,7 @@ class BalancedText extends StatelessWidget {
         }
 
         return Text(
-          getBalancedText(),
+          ((maxLines??2)==1)?data:getBalancedText(),
           style: effectiveStyle,
           textAlign: textAlign,
           softWrap: softWrap,
